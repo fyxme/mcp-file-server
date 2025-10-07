@@ -6,6 +6,8 @@ services:
       context: .
       dockerfile: Dockerfile
     container_name: mcp-file-server
+    # Keep the container alive so clients can `docker exec` to start the MCP server
+    command: ["sleep", "infinity"]
     volumes:
-      - /Users/abhishekloiwal/CascadeProjects/ClaudeProjects:/data
+      - /home/kingjulien/projects/ai-projects/ctf-ai-agent/playground/challenges:/data
     restart: unless-stopped
