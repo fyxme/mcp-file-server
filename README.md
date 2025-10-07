@@ -8,6 +8,7 @@ An MCP server for reading and writing files from your local file system. This se
 - Read file contents
 - Write content to files
 - Delete files and directories
+- Execute commands inside the container
 
 ## Prerequisites
 
